@@ -14,9 +14,9 @@ h2{display:flex;align-items:center;gap:10px;font-size:20px;margin:0 0 4px;color:
 p{margin:10px 0}.ask{border-left:3px solid var(--acc2);padding:8px 12px;background:#0f1540;border-radius:0 12px 12px 0;margin:12px 0}
 video{width:100%;max-width:300px;border-radius:14px;background:#000;display:block}.vgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:10px;margin-top:10px}.vgrid video{max-width:100%}.vgrid figcaption{font-size:12px;color:var(--muted);margin-top:4px}
 figure{margin:12px 0}.wide{max-width:100%}
-.sgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin:8px 0 4px}.sgrid figure{margin:0}.sgrid img{width:100%;aspect-ratio:640/678;object-fit:cover;border-radius:12px;border:1px solid var(--line);display:block}.sgrid figcaption{font-size:11px;color:var(--muted);text-align:center;margin-top:3px}
+.sgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin:8px 0 4px}.sgrid figure{margin:0}.sgrid img{width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:12px;border:1px solid var(--line);display:block}.sgrid figcaption{font-size:11px;color:var(--muted);text-align:center;margin-top:3px}
 table{border-collapse:collapse;width:100%;font-size:14px;margin:10px 0}td{border-top:1px solid var(--line);padding:7px 6px;vertical-align:top}td:first-child{color:var(--muted);width:46%}td b{color:#fff}
-.src{font-size:12px;color:var(--muted)}.top img.logo{height:46px;width:auto;border-radius:0}.shots{display:flex;gap:8px;margin:10px 0 2px}.shots img{width:31%;max-width:150px;border-radius:12px;border:1px solid var(--line)}.soon{display:grid;grid-template-columns:1fr 1fr;gap:12px}.soon section{margin:0}.soon h2{font-size:17px}.soon p{font-size:14px}@media(max-width:560px){.soon{grid-template-columns:1fr}}h3.cat{font-size:13px;letter-spacing:.6px;text-transform:uppercase;color:var(--acc);margin:22px 0 -4px}footer{color:var(--muted);font-size:13px;text-align:center;padding:24px 0 0}
+.src{font-size:12px;color:var(--muted)}.top img.logo{height:46px;width:auto;border-radius:0}.shots{display:flex;gap:8px;margin:10px 0 2px}.shots img{width:31%;max-width:150px;border-radius:12px;border:1px solid var(--line)}.strip{display:flex;gap:8px;overflow-x:auto;scroll-snap-type:x mandatory;padding:2px 0 8px;margin:10px 0 4px;-webkit-overflow-scrolling:touch}.strip>*{flex:0 0 auto;scroll-snap-align:start;width:129px;height:280px;object-fit:cover;border-radius:12px;border:1px solid var(--line);background:#000;display:block}.strip video{width:129px;max-width:none}.hint{font-size:12px;color:var(--muted);margin:0}h3.cat{font-size:13px;letter-spacing:.6px;text-transform:uppercase;color:var(--acc);margin:22px 0 -4px}footer{color:var(--muted);font-size:13px;text-align:center;padding:24px 0 0}
 </style></head><body><main>
 <div class="top"><img class="logo" src="img/kyro_logo_new.png" alt="Kyro Games"><div><h1>Kyro Games</h1><p>Indie puzzle studio · Istanbul · founded by Deniz Özkan</p></div></div>
 <p style="margin:6px 0 0">Polished, cozy puzzle games made in Unity. <b>3 live on the App Store, 4 more in App Review.</b> Every title is designed, art-directed and built in-house by Deniz Özkan, a senior game and technical artist with 14 years in the industry.</p>
@@ -26,27 +26,16 @@ table{border-collapse:collapse;width:100%;font-size:14px;margin:10px 0}td{border
 <section id="voxel"><h2><img src="img/icons/voxelorbit.jpg" alt=""><div>Voxel Orbit<small>3D cube-pop colour puzzle · iOS · released 25 Sep 2026 · v1.0.6</small></div></h2>
 <span class="tag ok">LIVE ON iOS</span><span class="tag">ANDROID CLOSED TEST</span><span class="tag">60 LEVELS + ENDLESS REMIX · OFFLINE</span>
 <p>A toy sculpture floats in space. Colour-coded UFOs orbit it on a glowing ring and blast every cube of their own colour. You turn the sculpture by hand; every one hides a surprise inside. Unity 6, custom mesh-to-voxel pipeline in Blender.</p>
-<div class="btns"><a class="btn" href="https://apps.apple.com/app/id6814149551">App Store</a><a class="btn o" href="pdf/VoxelOrbit_OnePager.pdf">One-pager (PDF)</a></div>
+<div class="btns"><a class="btn" href="https://apps.apple.com/app/id6814149551">App Store</a></div>
 <div class="ask"><b>Looking for:</b> a publishing partner for a CPI / marketability test. Android build on request. All IP owned by Kyro Games (registered in Türkiye).</div>
-<p><b>Sculptures</b> <span class="src">(60 in the game, each with a reveal inside)</span></p>
+<p><b>Sculptures</b> <span class="src">(3 of 60, each hides a surprise inside)</span></p>
 <div class="sgrid">
-<figure><img src="img/trex.jpg" alt="T-rex"><figcaption>T-rex → chicken</figcaption></figure>
-<figure><img src="img/chick.jpg" alt="Chick"><figcaption>Egg → chick</figcaption></figure>
-<figure><img src="img/galleon.jpg" alt="Galleon"><figcaption>Galleon → gold</figcaption></figure>
-<figure><img src="img/matryoshka.jpg" alt="Matryoshka"><figcaption>Doll → smaller doll</figcaption></figure>
-<figure><img src="img/ghost.jpg" alt="Ghost"><figcaption>Ghost</figcaption></figure>
-<figure><img src="img/sheep.jpg" alt="Sheep"><figcaption>Sheep → sheared</figcaption></figure>
-<figure><img src="img/rocket.jpg" alt="Rocket"><figcaption>Rocket</figcaption></figure>
-<figure><img src="img/anglerfish.jpg" alt="Anglerfish"><figcaption>Anglerfish → fishbone</figcaption></figure>
+<figure><img src="img/vo_pumpkin.jpg" alt="Pumpkin"><figcaption>Pumpkin</figcaption></figure>
+<figure><img src="img/vo_trex_turbo.jpg" alt="T-rex in TURBO"><figcaption>T-rex, TURBO</figcaption></figure>
+<figure><img src="img/vo_matryoshka.jpg" alt="Matryoshka"><figcaption>Doll → smaller doll</figcaption></figure>
 </div>
-<figure><video controls playsinline preload="metadata" poster="media/voxel_orbit_sculptures_46s.jpg" src="media/voxel_orbit_sculptures_46s.mp4"></video><figcaption class="src">46-second gameplay tour: chick, galleon, bulldog, dragon, trophy (store build)</figcaption></figure>
-<p><b>Ad concepts</b> (4 vertical creatives, 20–27 s)</p>
-<div class="vgrid">
-<figure><video controls playsinline preload="none" poster="media/voxelorbit_castle_dragon.jpg" src="media/voxelorbit_castle_dragon.mp4"></video><figcaption>Castle → dragon</figcaption></figure>
-<figure><video controls playsinline preload="none" poster="media/voxelorbit_trex_bawk.jpg" src="media/voxelorbit_trex_bawk.mp4"></video><figcaption>T-rex reveal</figcaption></figure>
-<figure><video controls playsinline preload="none" poster="media/voxelorbit_galleon_treasure.jpg" src="media/voxelorbit_galleon_treasure.mp4"></video><figcaption>Galleon → treasure</figcaption></figure>
-<figure><video controls playsinline preload="none" poster="media/voxelorbit_galleon_turbo.jpg" src="media/voxelorbit_galleon_turbo.mp4"></video><figcaption>Galleon, TURBO</figcaption></figure>
-</div>
+<p><b>Gameplay &amp; screenshots</b> <span class="src">(v1.0.6, levels 1 to 60)</span></p>
+<div class="strip"><video controls playsinline preload="none" poster="media/voxelorbit_gameplay_v106.jpg" src="media/voxelorbit_gameplay_v106.mp4"></video><img src="img/shots/voxelorbit_1.jpg" alt="" loading="lazy"><img src="img/shots/voxelorbit_2.jpg" alt="" loading="lazy"><img src="img/shots/voxelorbit_3.jpg" alt="" loading="lazy"><img src="img/shots/voxelorbit_4.jpg" alt="" loading="lazy"></div>
 <p><b>Numbers so far</b> <span class="src">(App Store Connect 5 Sep–4 Oct · Firebase 8 Sep–5 Oct · organic only, zero paid UA)</span></p>
 <table>
 <tr><td>Store page conversion</td><td><b>5.6%</b> 30-day avg · ~8% in launch week</td></tr>
@@ -62,7 +51,7 @@ table{border-collapse:collapse;width:100%;font-size:14px;margin:10px 0}td{border
 <section id="chonk"><h2><img src="img/icons/chonkout.jpg" alt=""><div>Chonk Out<small>Cozy cat block-slide puzzle · iOS · released 16 Aug 2026 · v1.0.8</small></div></h2>
 <span class="tag ok">LIVE ON iOS</span><span class="tag">101 HAND-BUILT LEVELS</span><span class="tag">ONE THUMB · LIGHT</span>
 <p>Round, sleepy, extremely in-the-way cats. Slide them off the board through the gates that match their colour. One-way chonks, sleepy stacks, frozen cats, jars and chains keep it fresh.</p>
-<div class="shots"><img src="img/shots/chonkout_1.jpg" alt=""><img src="img/shots/chonkout_2.jpg" alt=""></div>
+<div class="strip"><img src="img/shots/chonkout_1.jpg" alt="" loading="lazy"><img src="img/shots/chonkout_2.jpg" alt="" loading="lazy"><img src="img/shots/chonkout_3.jpg" alt="" loading="lazy"><img src="img/shots/chonkout_4.jpg" alt="" loading="lazy"></div>
 <div class="btns"><a class="btn" href="https://apps.apple.com/app/id6796061979">App Store</a></div>
 <p class="src">Web version (YouTube Playables) in certification.</p>
 </section>
@@ -70,24 +59,24 @@ table{border-collapse:collapse;width:100%;font-size:14px;margin:10px 0}td{border
 <section id="moonpaw"><h2><img src="img/icons/moonpaw.jpg" alt=""><div>Moonpaw Manor<small>Story-driven cat match-3 set in Istanbul · iOS · released 13 Jul 2026 · v1.0.8</small></div></h2>
 <span class="tag ok">LIVE ON iOS</span><span class="tag">100+ LEVELS</span><span class="tag">IAP + SUBSCRIPTION LIVE</span>
 <p>Moonpaw the wizard cat and Toto the mouse bring the light back to a moonlit manor above the Bosphorus. Classic match-3 blast with a story layer, a character mascot and a full shop and subscription flow.</p>
-<div class="shots"><img src="img/shots/moonpaw_1.jpg" alt=""><img src="img/shots/moonpaw_2.jpg" alt=""></div>
+<div class="strip"><img src="img/shots/moonpaw_1.jpg" alt="" loading="lazy"><img src="img/shots/moonpaw_2.jpg" alt="" loading="lazy"><img src="img/shots/moonpaw_3.jpg" alt="" loading="lazy"><img src="img/shots/moonpaw_4.jpg" alt="" loading="lazy"></div>
 <div class="btns"><a class="btn" href="https://apps.apple.com/app/id6783598201">App Store</a></div>
 </section>
 
 <h3 class="cat">Coming soon · in App Review</h3>
 <div class="soon">
-<section><h2><img src="img/icons/fuserush.jpg" alt=""><div>Fuse Rush: Save Nugget<small>Rope-escape puzzle · v1.1</small></div></h2><span class="tag">IN REVIEW</span><span class="tag">VOICED EN / TR</span>
+<section id="fuserush"><h2><img src="img/icons/fuserush.jpg" alt=""><div>Fuse Rush: Save Nugget<small>Rope-escape puzzle · v1.1</small></div></h2><span class="tag">IN REVIEW</span><span class="tag">VOICED EN / TR</span>
 <p>Baron Knotley tied Nugget the hamster to a rocket and lit the fuse. Slide ropes off the board in the right order before it blows. Every level is a little cartoon.</p>
-<div class="shots"><img src="img/shots/fuserush_1.jpg" alt=""><img src="img/shots/fuserush_2.jpg" alt=""></div></section>
-<section><h2><img src="img/icons/snowball.jpg" alt=""><div>Snowball Rescue: Ice Smash<small>Cozy winter physics smash</small></div></h2><span class="tag">IN REVIEW</span><span class="tag">PHYSICS</span>
+<div class="strip"><video controls playsinline preload="none" poster="media/fuserush_preview.jpg" src="media/fuserush_preview.mp4"></video><img src="img/shots/fuserush_1.jpg" alt="" loading="lazy"><img src="img/shots/fuserush_2.jpg" alt="" loading="lazy"><img src="img/shots/fuserush_3.jpg" alt="" loading="lazy"><img src="img/shots/fuserush_4.jpg" alt="" loading="lazy"></div></section>
+<section id="snowball"><h2><img src="img/icons/snowball.jpg" alt=""><div>Snowball Rescue: Ice Smash<small>Cozy winter physics smash</small></div></h2><span class="tag">IN REVIEW</span><span class="tag">PHYSICS</span>
 <p>Aim the snowman cannon, smash the ice and set the frozen fish free. Towers wobble, topple and splash into the lake.</p>
-<div class="shots"><img src="img/shots/snowball_1.jpg" alt=""><img src="img/shots/snowball_2.jpg" alt=""></div></section>
-<section><h2><img src="img/icons/cubecrew.jpg" alt=""><div>Cube Crew: Sort, Stack, Build!<small>Sort-and-build voxel puzzle</small></div></h2><span class="tag">IN REVIEW</span><span class="tag">55 BUILDS</span>
+<div class="strip"><video controls playsinline preload="none" poster="media/snowball_gameplay.jpg" src="media/snowball_gameplay.mp4"></video><img src="img/shots/snowball_1.jpg" alt="" loading="lazy"><img src="img/shots/snowball_2.jpg" alt="" loading="lazy"><img src="img/shots/snowball_3.jpg" alt="" loading="lazy"><img src="img/shots/snowball_4.jpg" alt="" loading="lazy"></div></section>
+<section id="cubecrew"><h2><img src="img/icons/cubecrew.jpg" alt=""><div>Cube Crew: Sort, Stack, Build!<small>Sort-and-build voxel puzzle</small></div></h2><span class="tag">IN REVIEW</span><span class="tag">55 BUILDS</span>
 <p>Toy trucks and a tower crane work the night shift. Send the right crates in the right order and raise voxel builds from the ground up.</p>
-<div class="shots"><img src="img/shots/cubecrew_1.jpg" alt=""><img src="img/shots/cubecrew_2.jpg" alt=""></div></section>
-<section><h2><img src="img/icons/blastbuild.jpg" alt=""><div>Blast &amp; Build<small>3D blaster build puzzle</small></div></h2><span class="tag">IN REVIEW</span><span class="tag">3D</span>
+<div class="strip"><img src="img/shots/cubecrew_1.jpg" alt="" loading="lazy"><img src="img/shots/cubecrew_2.jpg" alt="" loading="lazy"><img src="img/shots/cubecrew_3.jpg" alt="" loading="lazy"><img src="img/shots/cubecrew_4.jpg" alt="" loading="lazy"></div></section>
+<section id="blastbuild"><h2><img src="img/icons/blastbuild.jpg" alt=""><div>Blast &amp; Build<small>3D blaster build puzzle</small></div></h2><span class="tag">IN REVIEW</span><span class="tag">3D</span>
 <p>Load two toy blasters, fire colourful cubes and watch a 3D sculpture rise cube by cube. Plan your taps and keep the slots free.</p>
-<div class="shots"><img src="img/shots/blastbuild_1.jpg" alt=""><img src="img/shots/blastbuild_2.jpg" alt=""></div></section>
+<div class="strip"><video controls playsinline preload="none" poster="media/blastbuild_gameplay.jpg" src="media/blastbuild_gameplay.mp4"></video><img src="img/shots/blastbuild_1.jpg" alt="" loading="lazy"><img src="img/shots/blastbuild_2.jpg" alt="" loading="lazy"><img src="img/shots/blastbuild_3.jpg" alt="" loading="lazy"><img src="img/shots/blastbuild_4.jpg" alt="" loading="lazy"></div></section>
 </div>
 
 <footer>Kyro Games · Deniz Özkan · <a href="mailto:dozkanart@gmail.com">dozkanart@gmail.com</a> · <a href="https://kyrogames.com.tr">kyrogames.com.tr</a> · Istanbul<br><a href="pdf/KyroGames_Portfolio.pdf">Download the PDF portfolio</a></footer>

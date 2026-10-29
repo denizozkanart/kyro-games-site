@@ -2,7 +2,7 @@
 <title>Kyro Games — Portfolio</title>
 <link rel="icon" href="kyro.png"><style>
 @page{size:A4;margin:0}
-:root{--bg:#01041A;--panel:#0b1030;--line:#23295a;--ink:#e8ecff;--muted:#9aa3c7;--acc:#5ee1ff;--acc2:#ffd166;--ok:#7CF5A5;--orange:#ff9a5c}
+:root{--bg:#01041A;--panel:#0b1030;--line:#23295a;--ink:#e8ecff;--muted:#9aa3c7;--acc:#5ee1ff;--acc2:#ffd166;--ok:#7CF5A5}
 *{box-sizing:border-box;-webkit-print-color-adjust:exact;print-color-adjust:exact}
 html,body{margin:0;background:#1a1d33}body{color:var(--ink);font:10.5pt/1.45 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
 a{color:var(--acc);text-decoration:none}
@@ -12,22 +12,24 @@ a{color:var(--acc);text-decoration:none}
 .hdr{display:flex;align-items:center;gap:7mm;padding-bottom:5mm;border-bottom:1px solid var(--line)}
 .hdr img{height:20mm}.hdr h1{margin:0;font-size:17pt;line-height:1.15;color:#fff}.hdr p{margin:1mm 0 0;color:var(--muted);font-size:10pt}
 .stats{display:flex;gap:3mm;margin-left:auto}.stat{background:var(--panel);border:1px solid var(--line);border-radius:3mm;padding:2mm 3.5mm;text-align:center;min-width:22mm}.stat b{display:block;font-size:15pt;color:var(--acc2);line-height:1.1}.stat span{font-size:7.5pt;color:var(--muted);white-space:nowrap}
-.intro{margin:5mm 0 4mm;font-size:10.8pt}
-h2{font-size:12pt;letter-spacing:.6px;text-transform:uppercase;color:var(--acc);margin:4mm 0 2.5mm}
-.game{align-items:center;display:grid;grid-template-columns:1fr 28mm 28mm;gap:4mm;background:var(--panel);border:1px solid var(--line);border-radius:4mm;padding:3.5mm;margin-bottom:3mm}
-.game .t{display:flex;gap:3mm;align-items:center}.game .t img{width:15mm;height:15mm;border-radius:3.5mm}
-.game h3{margin:0;font-size:12.5pt;color:#fff;line-height:1.2}.game h3 small{display:block;font-size:8.5pt;color:var(--muted);font-weight:500}
-.game p{margin:2mm 0 1.5mm;font-size:9.3pt}
-.shot{width:28mm;height:60.6mm;object-fit:cover;border-radius:2.5mm;border:1px solid var(--line)}
+.intro{margin:4mm 0 3mm;font-size:10.5pt}
+h2{font-size:12pt;letter-spacing:.6px;text-transform:uppercase;color:var(--acc);margin:3mm 0 2.5mm}
+.game{display:grid;grid-template-columns:1fr auto;gap:4mm;align-items:center;background:var(--panel);border:1px solid var(--line);border-radius:4mm;padding:3.5mm;margin-bottom:3mm}
+.t{display:flex;gap:3mm;align-items:center}.t img{width:14mm;height:14mm;border-radius:3.5mm}
+h3{margin:0;font-size:12pt;color:#fff;line-height:1.2}h3 small{display:block;font-size:8.3pt;color:var(--muted);font-weight:500}
+.game p{margin:2mm 0 1.5mm;font-size:9.1pt}
+.shots{display:flex;gap:2mm}.shot{width:25mm;height:54mm;object-fit:cover;border-radius:2.5mm;border:1px solid var(--line)}
+.soon .shot{width:23mm;height:49.8mm}
 .tags{display:flex;flex-wrap:wrap;gap:1.5mm}.tag{font-size:7pt;font-weight:700;letter-spacing:.3px;padding:.7mm 2mm;border-radius:99px;background:#13204a;color:var(--acc)}.tag.ok{color:var(--ok)}.tag.y{color:var(--acc2)}
-.store{font-size:8.5pt;margin-top:1.5mm;color:var(--muted)}.store a{font-weight:700}
-.grid2{display:grid;grid-template-columns:1fr 1fr;gap:3mm}
-.soon{align-items:center;display:grid;grid-template-columns:1fr 28mm;gap:3mm;background:var(--panel);border:1px solid var(--line);border-radius:4mm;padding:3.5mm}
-.soon .shot{width:28mm;height:60.6mm}.soon p{margin:2mm 0 1.5mm;font-size:9pt}
-.ask{display:grid;grid-template-columns:1fr 1fr;gap:3mm;margin-top:5mm}
+.links{font-size:8.5pt;margin-top:2mm;color:var(--muted)}.links a{font-weight:700;margin-right:3mm}
+.sculpt{display:grid;grid-template-columns:repeat(3,1fr);gap:3mm;margin:2mm 0 1mm}.sculpt img{width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:3mm;border:1px solid var(--line);display:block}.sculpt figure{margin:0}.sculpt figcaption{font-size:8pt;color:var(--muted);text-align:center;margin-top:1mm}
+table{border-collapse:collapse;width:100%;font-size:9pt;margin:2mm 0}td{border-top:1px solid var(--line);padding:1.6mm 2mm;vertical-align:top}td:first-child{color:var(--muted);width:42%}td b{color:#fff}
+.panel{background:var(--panel);border:1px solid var(--line);border-radius:4mm;padding:4mm;margin-bottom:3mm}
+.ask{display:grid;grid-template-columns:1fr 1fr;gap:3mm;margin-top:3mm}
 .box{background:#0f1540;border-left:3px solid var(--acc2);border-radius:0 3mm 3mm 0;padding:3mm 4mm;font-size:9.3pt}.box b{color:#fff}.box ul{margin:1.5mm 0 0;padding-left:4.5mm}.box li{margin:.6mm 0}
-.contact{display:flex;align-items:center;gap:5mm;margin-top:5mm;background:var(--panel);border:1px solid var(--line);border-radius:4mm;padding:4mm}
-.contact img.qr{width:32mm;height:32mm;border-radius:2mm;background:#fff;padding:1.2mm}.contact h3{margin:0 0 1mm;font-size:12pt;color:#fff}.contact p{margin:.6mm 0;font-size:9.5pt}
+.contact{display:flex;align-items:center;gap:5mm;margin-top:4mm;background:var(--panel);border:1px solid var(--line);border-radius:4mm;padding:4mm}
+.contact img.qr{width:30mm;height:30mm;border-radius:2mm;background:#fff;padding:1.2mm}.contact h3{margin:0 0 1mm}.contact p{margin:.6mm 0;font-size:9.5pt}
+.src{font-size:8pt;color:var(--muted)}
 .foot{position:absolute;left:13mm;right:13mm;bottom:6mm;font-size:7.5pt;color:var(--muted);display:flex;justify-content:space-between}
 </style></head><body>
 
@@ -37,48 +39,70 @@ h2{font-size:12pt;letter-spacing:.6px;text-transform:uppercase;color:var(--acc);
 <p class="intro">Kyro Games makes polished, cozy puzzle games in Unity. Every title is designed, art-directed and built in-house by Deniz Özkan, a senior game artist and technical artist with 14 years in the industry. Seven games shipped or submitted since July 2026, with a fast loop from prototype to store.</p>
 
 <h2>Live on the App Store</h2>
-<div class="game"><div><div class="t"><img src="img/icons/voxelorbit.jpg" alt=""><h3>Voxel Orbit: Cube Pop Puzzle<small>3D rotate-and-blast colour puzzle · released Sep 2026 · v1.0.6</small></h3></div>
-<p>A toy sculpture floats in space. Colour-coded UFOs orbit it on a glowing ring and blast every cube of their colour while you turn the sculpture by hand. Each of the 60 sculptures hides a surprise inside, then an endless remix mode takes over. Custom mesh-to-voxel pipeline.</p>
+<div class="game"><div><div class="t"><img src="img/icons/voxelorbit.jpg" alt=""><h3>Voxel Orbit: Cube Pop Puzzle<small>3D rotate-and-blast colour puzzle · Sep 2026 · v1.0.6</small></h3></div>
+<p>A toy sculpture floats in space. Colour-coded UFOs orbit it on a glowing ring and blast every cube of their colour while you turn the sculpture by hand. 60 sculptures, each with a surprise inside, then an endless remix mode.</p>
 <div class="tags"><span class="tag ok">LIVE iOS</span><span class="tag">ANDROID CLOSED TEST</span><span class="tag">60 LEVELS + ENDLESS</span><span class="tag y">OPEN FOR PUBLISHING</span></div>
-<div class="store">Organic only: 5.6% store conversion · 17 min avg engagement per user · <a href="https://apps.apple.com/app/id6814149551">App Store</a></div></div>
-<img class="shot" src="img/shots/voxelorbit_1.jpg" alt=""><img class="shot" src="img/shots/voxelorbit_2.jpg" alt=""></div>
+<div class="links"><a href="https://denizozkanart.github.io/kyro-games-site/kit/#voxel">▶ Gameplay video</a><a href="https://apps.apple.com/app/id6814149551">App Store</a></div></div>
+<div class="shots"><img class="shot" src="img/shots/voxelorbit_1.jpg" alt=""><img class="shot" src="img/shots/voxelorbit_2.jpg" alt=""><img class="shot" src="img/shots/voxelorbit_4.jpg" alt=""></div></div>
 
-<div class="game"><div><div class="t"><img src="img/icons/chonkout.jpg" alt=""><h3>Chonk Out: Cat Block Slide<small>Cozy cat block-slide puzzle · released Aug 2026 · v1.0.8</small></h3></div>
-<p>Round, sleepy, extremely in-the-way cats. Slide them off the board through the gates that match their colour. One-way chonks, sleepy stacks, frozen cats, jars and chains keep 101 hand-built levels fresh. One thumb, light and cozy.</p>
-<div class="tags"><span class="tag ok">LIVE iOS</span><span class="tag">101 LEVELS</span><span class="tag">WEB / YOUTUBE PLAYABLES IN CERTIFICATION</span></div>
-<div class="store"><a href="https://apps.apple.com/app/id6796061979">App Store</a></div></div>
-<img class="shot" src="img/shots/chonkout_1.jpg" alt=""><img class="shot" src="img/shots/chonkout_2.jpg" alt=""></div>
+<div class="game"><div><div class="t"><img src="img/icons/chonkout.jpg" alt=""><h3>Chonk Out: Cat Block Slide<small>Cozy cat block-slide puzzle · Aug 2026 · v1.0.8</small></h3></div>
+<p>Round, sleepy, extremely in-the-way cats. Slide them off the board through the gates that match their colour. One-way chonks, sleepy stacks, frozen cats, jars and chains keep 101 hand-built levels fresh.</p>
+<div class="tags"><span class="tag ok">LIVE iOS</span><span class="tag">101 LEVELS</span><span class="tag">YOUTUBE PLAYABLES IN CERTIFICATION</span></div>
+<div class="links"><a href="https://denizozkanart.github.io/kyro-games-site/kit/#chonk">▶ More screenshots</a><a href="https://apps.apple.com/app/id6796061979">App Store</a></div></div>
+<div class="shots"><img class="shot" src="img/shots/chonkout_1.jpg" alt=""><img class="shot" src="img/shots/chonkout_2.jpg" alt=""><img class="shot" src="img/shots/chonkout_4.jpg" alt=""></div></div>
 
-<div class="game"><div><div class="t"><img src="img/icons/moonpaw.jpg" alt=""><h3>Moonpaw Manor: Cat Match 3<small>Story-driven match-3 set in Istanbul · released Jul 2026 · v1.0.8</small></h3></div>
+<div class="game"><div><div class="t"><img src="img/icons/moonpaw.jpg" alt=""><h3>Moonpaw Manor: Cat Match 3<small>Story-driven match-3 set in Istanbul · Jul 2026 · v1.0.8</small></h3></div>
 <p>Moonpaw the wizard cat and Toto the mouse bring the light back to a moonlit manor above the Bosphorus. Classic match-3 blast with a story layer, a character mascot, and a full shop and subscription flow already live.</p>
 <div class="tags"><span class="tag ok">LIVE iOS</span><span class="tag">100+ LEVELS</span><span class="tag">IAP + SUBSCRIPTION LIVE</span></div>
-<div class="store"><a href="https://apps.apple.com/app/id6783598201">App Store</a></div></div>
-<img class="shot" src="img/shots/moonpaw_1.jpg" alt=""><img class="shot" src="img/shots/moonpaw_2.jpg" alt=""></div>
-<div class="foot"><span>Kyro Games · kyrogames.com.tr</span><span>Portfolio · October 2026 · 1/2</span></div>
+<div class="links"><a href="https://denizozkanart.github.io/kyro-games-site/kit/#moonpaw">▶ More screenshots</a><a href="https://apps.apple.com/app/id6783598201">App Store</a></div></div>
+<div class="shots"><img class="shot" src="img/shots/moonpaw_1.jpg" alt=""><img class="shot" src="img/shots/moonpaw_2.jpg" alt=""><img class="shot" src="img/shots/moonpaw_3.jpg" alt=""></div></div>
+<div class="foot"><span>Kyro Games · kyrogames.com.tr</span><span>Portfolio · October 2026 · 1/3</span></div>
 </div>
 
 <div class="page">
 <h2 style="margin-top:0">Coming soon · in App Review</h2>
-<div class="grid2">
-<div class="soon"><div><div class="t" style="display:flex;gap:3mm;align-items:center"><img src="img/icons/fuserush.jpg" alt="" style="width:13mm;height:13mm;border-radius:3mm"><h3 style="margin:0;font-size:11.5pt;color:#fff;line-height:1.2">Fuse Rush: Save Nugget<small style="display:block;font-size:8pt;color:var(--muted);font-weight:500">Rope-escape puzzle · v1.1</small></h3></div>
+<div class="game soon"><div><div class="t"><img src="img/icons/fuserush.jpg" alt=""><h3>Fuse Rush: Save Nugget<small>Rope-escape puzzle · v1.1</small></h3></div>
 <p>Baron Knotley tied Nugget the hamster to a rocket and lit the fuse. Slide ropes off the board in the right order before it blows. Every level is a little cartoon, fully voiced in English and Turkish.</p>
-<div class="tags"><span class="tag y">IN REVIEW</span><span class="tag">HUNDREDS OF PUZZLES</span><span class="tag">VOICED</span></div></div>
-<img class="shot" src="img/shots/fuserush_2.jpg" alt=""></div>
+<div class="tags"><span class="tag y">IN REVIEW</span><span class="tag">HUNDREDS OF PUZZLES</span><span class="tag">VOICED EN / TR</span></div>
+<div class="links"><a href="https://denizozkanart.github.io/kyro-games-site/kit/#fuserush">▶ Gameplay video</a></div></div>
+<div class="shots"><img class="shot" src="img/shots/fuserush_1.jpg" alt=""><img class="shot" src="img/shots/fuserush_2.jpg" alt=""><img class="shot" src="img/shots/fuserush_4.jpg" alt=""></div></div>
 
-<div class="soon"><div><div class="t" style="display:flex;gap:3mm;align-items:center"><img src="img/icons/snowball.jpg" alt="" style="width:13mm;height:13mm;border-radius:3mm"><h3 style="margin:0;font-size:11.5pt;color:#fff;line-height:1.2">Snowball Rescue: Ice Smash<small style="display:block;font-size:8pt;color:var(--muted);font-weight:500">Cozy winter physics smash</small></h3></div>
-<p>Aim the snowman cannon, smash the ice and set the frozen fish free. Towers wobble, topple and splash into the lake. Combos, exploding gifts and boosters, all hand-made levels.</p>
-<div class="tags"><span class="tag y">IN REVIEW</span><span class="tag">PHYSICS</span><span class="tag">OFFLINE</span></div></div>
-<img class="shot" src="img/shots/snowball_1.jpg" alt=""></div>
+<div class="game soon"><div><div class="t"><img src="img/icons/snowball.jpg" alt=""><h3>Snowball Rescue: Ice Smash<small>Cozy winter physics smash</small></h3></div>
+<p>Aim the snowman cannon, smash the ice and set the frozen fish free. Towers wobble, topple and splash into the lake. Combos, exploding gifts and boosters across hand-made levels.</p>
+<div class="tags"><span class="tag y">IN REVIEW</span><span class="tag">PHYSICS</span><span class="tag">OFFLINE</span></div>
+<div class="links"><a href="https://denizozkanart.github.io/kyro-games-site/kit/#snowball">▶ Gameplay video</a></div></div>
+<div class="shots"><img class="shot" src="img/shots/snowball_1.jpg" alt=""><img class="shot" src="img/shots/snowball_3.jpg" alt=""><img class="shot" src="img/shots/snowball_4.jpg" alt=""></div></div>
 
-<div class="soon"><div><div class="t" style="display:flex;gap:3mm;align-items:center"><img src="img/icons/cubecrew.jpg" alt="" style="width:13mm;height:13mm;border-radius:3mm"><h3 style="margin:0;font-size:11.5pt;color:#fff;line-height:1.2">Cube Crew: Sort, Stack, Build!<small style="display:block;font-size:8pt;color:var(--muted);font-weight:500">Sort-and-build voxel puzzle</small></h3></div>
+<div class="game soon"><div><div class="t"><img src="img/icons/cubecrew.jpg" alt=""><h3>Cube Crew: Sort, Stack, Build!<small>Sort-and-build voxel puzzle</small></h3></div>
 <p>Toy trucks and a tower crane work the night shift. Send the right crates in the right order and raise 55 voxel builds from the ground up: diggers, castles, robots, dinos and more.</p>
-<div class="tags"><span class="tag y">IN REVIEW</span><span class="tag">55 BUILDS</span></div></div>
-<img class="shot" src="img/shots/cubecrew_1.jpg" alt=""></div>
+<div class="tags"><span class="tag y">IN REVIEW</span><span class="tag">55 BUILDS</span></div>
+<div class="links"><a href="https://denizozkanart.github.io/kyro-games-site/kit/#cubecrew">▶ More screenshots</a></div></div>
+<div class="shots"><img class="shot" src="img/shots/cubecrew_1.jpg" alt=""><img class="shot" src="img/shots/cubecrew_2.jpg" alt=""><img class="shot" src="img/shots/cubecrew_4.jpg" alt=""></div></div>
 
-<div class="soon"><div><div class="t" style="display:flex;gap:3mm;align-items:center"><img src="img/icons/blastbuild.jpg" alt="" style="width:13mm;height:13mm;border-radius:3mm"><h3 style="margin:0;font-size:11.5pt;color:#fff;line-height:1.2">Blast &amp; Build<small style="display:block;font-size:8pt;color:var(--muted);font-weight:500">3D blaster build puzzle</small></h3></div>
+<div class="game soon"><div><div class="t"><img src="img/icons/blastbuild.jpg" alt=""><h3>Blast &amp; Build<small>3D blaster build puzzle</small></h3></div>
 <p>Load two toy blasters, fire colourful cubes and watch a 3D sculpture rise cube by cube. Plan your taps, keep the slots free, chain magazines for combos and finish every build.</p>
-<div class="tags"><span class="tag y">IN REVIEW</span><span class="tag">3D</span></div></div>
-<img class="shot" src="img/shots/blastbuild_1.jpg" alt=""></div>
+<div class="tags"><span class="tag y">IN REVIEW</span><span class="tag">3D</span></div>
+<div class="links"><a href="https://denizozkanart.github.io/kyro-games-site/kit/#blastbuild">▶ Gameplay video</a></div></div>
+<div class="shots"><img class="shot" src="img/shots/blastbuild_1.jpg" alt=""><img class="shot" src="img/shots/blastbuild_2.jpg" alt=""><img class="shot" src="img/shots/blastbuild_4.jpg" alt=""></div></div>
+<div class="foot"><span>Kyro Games · kyrogames.com.tr</span><span>Portfolio · October 2026 · 2/3</span></div>
+</div>
+
+<div class="page">
+<h2 style="margin-top:0">Spotlight · Voxel Orbit</h2>
+<div class="panel">
+<div class="sculpt">
+<figure><img src="img/vo_pumpkin.jpg" alt=""><figcaption>Pumpkin</figcaption></figure>
+<figure><img src="img/vo_trex_turbo.jpg" alt=""><figcaption>T-rex, TURBO</figcaption></figure>
+<figure><img src="img/vo_matryoshka.jpg" alt=""><figcaption>Doll → smaller doll</figcaption></figure>
+</div>
+<p style="margin:3mm 0 1mm;font-size:9.5pt"><b style="color:#fff">Numbers so far</b> <span class="src">(organic only, zero paid UA · App Store Connect 5 Sep–4 Oct · Firebase 8 Sep–5 Oct)</span></p>
+<table>
+<tr><td>Store page conversion</td><td><b>5.6%</b> 30-day average · ~8% in launch week</td></tr>
+<tr><td>Avg engagement per active user</td><td><b>17 min 05 s</b> · 2.9 sessions</td></tr>
+<tr><td>Traffic source</td><td>App Store Browse only · no ads, no search campaigns</td></tr>
+<tr><td>Monetisation</td><td>Off by design until a test; rewarded, interstitial and no-ads pack designed in</td></tr>
+<tr><td>Retention</td><td>Small organic base so far. That is why we want a test.</td></tr>
+</table>
 </div>
 
 <div class="ask">
@@ -89,7 +113,7 @@ h2{font-size:12pt;letter-spacing:.6px;text-transform:uppercase;color:var(--acc);
 <div class="contact"><img class="qr" src="qr_kit.png" alt="QR to the online kit"><div><h3>Deniz Özkan · Founder, Kyro Games</h3>
 <p><a href="mailto:dozkanart@gmail.com">dozkanart@gmail.com</a> · <a href="https://kyrogames.com.tr">kyrogames.com.tr</a></p>
 <p><a href="https://www.linkedin.com/in/denizozkanart/">linkedin.com/in/denizozkanart</a> · <a href="https://www.artstation.com/denizozkan">artstation.com/denizozkan</a></p>
-<p style="color:var(--muted)">Scan for the online kit with gameplay videos and ad concepts.</p></div></div>
-<div class="foot"><span>Kyro Games · kyrogames.com.tr</span><span>Portfolio · October 2026 · 2/2</span></div>
+<p style="color:var(--muted)">Scan for the online kit: gameplay videos and more screenshots for every game.</p></div></div>
+<div class="foot"><span>Kyro Games · kyrogames.com.tr</span><span>Portfolio · October 2026 · 3/3</span></div>
 </div>
 </body></html>
